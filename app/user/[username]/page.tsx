@@ -1,14 +1,16 @@
 import { GitHubUser, Repo } from '../types';
 import RepoListClient from './Components/RepoListClient';
 
+const GITUSERURL =  `https://api.github.com/users`
+
 export default async function UserPage({
   params,
 }: {
   params: { username: string };
 }) {
   const [userRes, repoRes] = await Promise.all([
-    fetch(`https://api.github.com/users/${params.username}`),
-    fetch(`https://api.github.com/users/${params.username}/repos`, {
+    fetch(`${GITUSERURL}/${params.username}`),
+    fetch(`${GITUSERURL}/${params.username}/repos`, {
       next: { revalidate: 60 },
     }),
   ]);
