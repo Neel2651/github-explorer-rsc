@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "semi": ["warn", "always"],
+    "quotes": ["warn", "single"],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/jsx-key": "warn"
+  }
+}
