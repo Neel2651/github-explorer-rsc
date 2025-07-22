@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Next.js 15 Starter with RSC, Tailwind, ESLint, Prettier, and Husky
 
-## Getting Started
+📝 This project is built as a **demo setup** for blog/tutorial purposes to help beginners learn and scaffold a modern Next.js 15 app with proper tooling.
 
-First, run the development server:
+A modern starter template using:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Next.js 15 with React Server Components (RSC)
+- 🎨 Tailwind CSS for styling
+- 🧹 Prettier for code formatting
+- 🧪 ESLint for linting
+- 🛡️ Husky + Lint-Staged for Git hooks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tool         | Purpose
+-------------|----------------------------------
+Next.js 15   | React framework with RSC support
+Tailwind CSS | Utility-first CSS
+Prettier     | Code formatting
+ESLint       | Linting and best practices
+Husky        | Git hooks (pre-commit)
+Lint-Staged  | Run scripts on staged files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔧 Getting Started
 
-## Learn More
+1. Clone the repo
+   git clone <your-repo-url>
+   cd <your-project-name>
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies
+   npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the dev server
+   npm run dev
+   Visit http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧪 Scripts
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run dev       # Start development server  
+npm run build     # Build for production  
+npm run start     # Start production server  
+npm run lint      # Run ESLint  
+npm run format    # Run Prettier  
